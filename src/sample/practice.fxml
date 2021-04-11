@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="400.0">
+            <children>
+                <Label layoutX="77.0" layoutY="23.0" text="myTracker">
+                    <font>
+                        <Font size="55.0" />
+                    </font>
+                    <effect>
+                        <Glow level="0.85" />
+                    </effect>
+                </Label>
+                <TextField fx:id="taskTextField" layoutX="32.0" layoutY="105.0" onAction="#HandleTaskTextF" prefHeight="26.0" prefWidth="340.0" promptText="Task" />
+                <Button fx:id="addBtn" layoutX="32.0" layoutY="145.0" mnemonicParsing="false" onAction="#HandleAddBtn" prefHeight="26.0" prefWidth="100.0" text="Add" />
+                <Button fx:id="deleteBtn" layoutX="142.0" layoutY="145.0" mnemonicParsing="false" onAction="#HandleDeleteBtn" prefHeight="26.0" prefWidth="100.0" text="Delete" />
+                <TextField fx:id="filterTextField" layoutX="32.0" layoutY="208.0" onAction="#HandleFilterTextF" prefHeight="26.0" prefWidth="340.0" promptText="Filter" />
+                <Button fx:id="searchBtn" layoutX="32.0" layoutY="251.0" mnemonicParsing="false" onAction="#HandleSearchBtn" prefHeight="26.0" prefWidth="100.0" text="Search" />
+                <Button fx:id="loadBtn" layoutX="271.0" layoutY="251.0" mnemonicParsing="false" onAction="#HandleLoadBtn" prefHeight="26.0" prefWidth="100.0" text="Load" />
+                <Separator layoutX="102.0" layoutY="297.0" prefHeight="7.0" prefWidth="200.0" />
+                <Button fx:id="saveBtn" layoutX="162.0" layoutY="545.0" mnemonicParsing="false" onAction="#HandleSaveBtn" prefHeight="26.0" prefWidth="100.0" text="Save" />
+                <Button fx:id="deleteAllBtn" layoutX="270.0" layoutY="545.0" mnemonicParsing="false" onAction="#HandleDeleteAllBtn" prefHeight="26.0" prefWidth="100.0" text="Delete All" />
+            <TableView fx:id="tableView" layoutX="32.0" layoutY="315.0" prefHeight="200.0" prefWidth="340.0">
+              <columns>
+                <TableColumn fx:id="columnOne" prefWidth="165.0" text="C1" />
+                <TableColumn fx:id="columnTwo" prefWidth="174.0" text="C2" />
+              </columns>
+            </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
