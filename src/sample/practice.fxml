@@ -31,19 +31,19 @@
                         <Glow level="0.85" />
                     </effect>
                 </Label>
-                <TextField fx:id="taskTextField" layoutX="32.0" layoutY="105.0" onAction="#HandleTaskTextF" prefHeight="26.0" prefWidth="340.0" promptText="Task" />
-                <Button fx:id="addBtn" layoutX="32.0" layoutY="145.0" mnemonicParsing="false" onAction="#HandleAddBtn" prefHeight="26.0" prefWidth="100.0" text="Add" />
-                <Button fx:id="deleteBtn" layoutX="142.0" layoutY="145.0" mnemonicParsing="false" onAction="#HandleDeleteBtn" prefHeight="26.0" prefWidth="100.0" text="Delete" />
-                <TextField fx:id="filterTextField" layoutX="32.0" layoutY="208.0" onAction="#HandleFilterTextF" prefHeight="26.0" prefWidth="340.0" promptText="Filter" />
-                <Button fx:id="searchBtn" layoutX="32.0" layoutY="251.0" mnemonicParsing="false" onAction="#HandleSearchBtn" prefHeight="26.0" prefWidth="100.0" text="Search" />
-                <Button fx:id="loadBtn" layoutX="271.0" layoutY="251.0" mnemonicParsing="false" onAction="#HandleLoadBtn" prefHeight="26.0" prefWidth="100.0" text="Load" />
+                <TextField fx:id="taskTextField" layoutX="32.0" layoutY="105.0" prefHeight="26.0" prefWidth="340.0" promptText="Task" />
+                <Button layoutX="32.0" layoutY="145.0" mnemonicParsing="false" onAction="#HandleAddBtn" prefHeight="26.0" prefWidth="100.0" text="Add" />
+                <Button layoutX="142.0" layoutY="145.0" mnemonicParsing="false" onAction="#HandleDeleteBtn" prefHeight="26.0" prefWidth="100.0" text="Delete" />
+                <TextField fx:id="filterTextField" layoutX="32.0" layoutY="208.0" prefHeight="26.0" prefWidth="340.0" promptText="Filter" />
+                <Button layoutX="32.0" layoutY="251.0" mnemonicParsing="false" onAction="#HandleSearchBtn" prefHeight="26.0" prefWidth="100.0" text="Search" />
+                <Button layoutX="271.0" layoutY="251.0" mnemonicParsing="false" onAction="#HandleLoadBtn" prefHeight="26.0" prefWidth="100.0" text="Load" />
                 <Separator layoutX="102.0" layoutY="297.0" prefHeight="7.0" prefWidth="200.0" />
-                <Button fx:id="saveBtn" layoutX="162.0" layoutY="545.0" mnemonicParsing="false" onAction="#HandleSaveBtn" prefHeight="26.0" prefWidth="100.0" text="Save" />
-                <Button fx:id="deleteAllBtn" layoutX="270.0" layoutY="545.0" mnemonicParsing="false" onAction="#HandleDeleteAllBtn" prefHeight="26.0" prefWidth="100.0" text="Delete All" />
+                <Button layoutX="162.0" layoutY="545.0" mnemonicParsing="false" onAction="#HandleSaveBtn" prefHeight="26.0" prefWidth="100.0" text="Save" />
+                <Button layoutX="270.0" layoutY="545.0" mnemonicParsing="false" onAction="#HandleDeleteAllBtn" prefHeight="26.0" prefWidth="100.0" text="Delete All" />
             <TableView fx:id="tableView" layoutX="32.0" layoutY="315.0" prefHeight="200.0" prefWidth="340.0">
               <columns>
-                <TableColumn fx:id="columnOne" prefWidth="165.0" text="C1" />
-                <TableColumn fx:id="columnTwo" prefWidth="174.0" text="C2" />
+                <TableColumn fx:id="columnOne" prefWidth="165.0" text="Task" />
+                <TableColumn fx:id="columnTwo" prefWidth="174.0" text="Responsible" />
               </columns>
             </TableView>
             </children>
